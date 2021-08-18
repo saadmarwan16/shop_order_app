@@ -62,8 +62,8 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
-  assets:
-    - shop_order_icon.png
+  # assets:
+  #   - shop_order_icon.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -91,12 +91,18 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
 
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/app_icons/shop_order_icon.png"
+  remove_alpha_ios: true
+
 splash_screen_view:
   color: "#ffffff"
-  image: assets/shop_order_icon.png
+  image: assets/app_icons/shop_order_icon.png
 
   color_dark: "#000000"
-  image_dark: assets/shop_order_icon.png
+  image_dark: assets/app_icons/shop_order_icon.png
 
   android_gravity: center
   ios_content_mode: center
